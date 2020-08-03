@@ -31,7 +31,9 @@ body {
     outline: none;
     box-shadow: none;
 }
-
+.black{
+    background-color: #10101B;
+}
 input[type='text']{
     background-color: #3D4153;
     padding: 10px 0px;
