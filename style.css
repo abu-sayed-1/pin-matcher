@@ -1,3 +1,14 @@
+
+body{
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select:none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -108,9 +119,9 @@ color: #E0B612;
     color: #FF3C5F;
     margin-top: 10px;
 }
-#right{
+#exactDigit{
       display: none;
 }
-#footer{ 
+#incorrectDigit{ 
     display: none;
 }
