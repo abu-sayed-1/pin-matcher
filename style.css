@@ -97,6 +97,8 @@ color: #E0B612;
     margin-top: 20px;
     border-radius: 15px;
     padding: 5px 20px;
+  
+
 }
 .notify-section{
     width: 35%;
@@ -105,4 +107,10 @@ color: #E0B612;
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
+}
+#right{
+      display: none;
+}
+#footer{ 
+    display: none;
 }

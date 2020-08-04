@@ -19,13 +19,13 @@ function calculate(x){
 // 	onclick="generatePin('random-num')"
 // }
 
-	  var inputs = document.getElementById("randomNum");
+	  var inputs = document.getElementById('randomNum');
 	     inputs. addEventListener('click',function(){
 			for (let i =0; i <1;i++) {
 	        	var randomNumber = Math.random()*9999;
 		        var roundNum = Math.round(randomNumber);
 		         inputs =roundNum;
-		        document.getElementById("input-GeneratePin").value =inputs;  
+		        document.getElementById('input-GeneratePin').value =inputs;  
 	         
         
 		
@@ -33,18 +33,22 @@ function calculate(x){
 	
 })
 
-      var submitBtn = document.getElementById('submitBtn');
+      var submitBtn = document.getElementById('submitBtn')
 	   submitBtn.addEventListener("click",function(){
-      var num = document.getElementById('input-GeneratePin').value;
-	  var inputNum =document.getElementById('input').value;
-		if (num<=inputNum) {
+        var num = document.getElementById('input-GeneratePin').value;
+		var inputNum =document.getElementById('input').value;
+		if (num == inputNum) {
 			 
+			    document.getElementById('right');
+				right.style.display='block';
 			 
-			
 		}
-		else{
-			console.log('not Ok');
+		else{ 
+			 document.getElementById("footer");
+			 footer.style.display=("block");
+			 
 		}
+		
  })
 
 
