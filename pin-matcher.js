@@ -32,21 +32,31 @@ function buttonNumber(btnNum){
 })
 // checks input value---------
 
-        var submitBtn = document.getElementById('submitBtn')
-	        submitBtn.addEventListener('click',function(){
+        // var submitBtn = document.getElementById('submitBtn')
+		//     submitBtn.addEventListener('click',function(){ })
+		function submitButton(){
         var num = document.getElementById('input-GeneratePin').value;
 		var inputNum = document.getElementById('input').value;
 
-		if (num == inputNum) {
- 		  document.getElementById('exactDigit');
-		   exactDigit.style.display='block';
+		if (num == "" && inputNum == "") {
+			 alert('please First give your generate pin');
+	
+		}
+          else if(num == inputNum) {
+ 		    document.getElementById('exactDigit');
+		    exactDigit.style.display='block';
+		    document.getElementById('incorrectDigit');
+		    incorrectDigit.style.display ='none';
 
-		}else{ 
+		}
+		else{ 
 			 document.getElementById('incorrectDigit');
 			 incorrectDigit.style.display ='block';
+			 document.getElementById('exactDigit');
+			 exactDigit.style.display='none';
 
 		}
 
- })
+}
 
 
